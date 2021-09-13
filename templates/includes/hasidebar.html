@@ -1,0 +1,144 @@
+<div class="sidebar">
+  <div class="sidebar-wrapper">
+
+    <ul class="nav">
+
+      <li class="{% if 'fadash' == segment %} active {% endif %} ">
+        <a href="/">
+          <i class="tim-icons icon-world"></i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+
+      <li class="{% if 'PLO Comp' == segment %} active {% endif %}">
+        <a data-toggle="collapse" href="#plocomp">
+          <i class="tim-icons icon-atom"></i>
+          <p>Course Wise PLO Trend
+            <b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse" id="plocomp">
+          <ul class="nav">
+
+            <li>
+              <a href="{% url 'ccomp' %}">
+                <span class="sidebar-mini-icon">C</span>
+                <span class="sidebar-normal">Course Wise</span>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'pcper' %}">
+                <span class="sidebar-mini-icon">T</span>
+                <span class="sidebar-normal">PLO Wise Achievement</span>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'ciplo' %}">
+                <span class="sidebar-mini-icon">I</span>
+                <span class="sidebar-normal">Instructor Wise For A Course</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <!-- ------------------------------------------------------------------------------------- -->
+      
+      <li class="{% if 'PLO State' == segment %} active {% endif %}">
+        <a data-toggle="collapse" href="#plostate">
+          <i class="tim-icons icon-chart-bar-32"></i>
+          <p>PLO State Of A Student
+            <b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse" id="plostate">
+          <ul class="nav">
+
+            <li>
+              <a href="{% url 'studplo' %}">
+                <span class="sidebar-mini-icon">C</span>
+                <span class="sidebar-normal">Course And Program Wise</span>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'studentplotable' %}">
+                <span class="sidebar-mini-icon">I</span>
+                <span class="sidebar-normal">All Achieved & Failed PLOs</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- ------------------------------------------------------------------------------------- -->
+      
+      <li class="{% if 'PLO prog' == segment %} active {% endif %}">
+        <a data-toggle="collapse" href="#ploprog">
+          <i class="tim-icons icon-chart-bar-32"></i>
+          <p>Program Wise PLO Comparison
+            <b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse" id="ploprog">
+          <ul class="nav">
+
+            <li>
+              <a href="{% url 'programplotable' %}">
+                <span class="sidebar-mini-icon">C</span>
+                <span class="sidebar-normal">PLO Achievements</span>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'pcomp' %}">
+                <span class="sidebar-mini-icon">I</span>
+                <span class="sidebar-normal">Student PLO Comparison</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- ------------------------------------------------------------------------------------- -->
+
+      <li class="{% if 'PLO uni' == segment %} active {% endif %}">
+        <a data-toggle="collapse" href="#plop">
+          <i class="tim-icons icon-atom"></i>
+          <p>University Wise PLO Trend
+            <b class="caret"></b>
+          </p>
+        </a>
+        <div class="collapse" id="plop">
+          <ul class="nav">
+
+            <li>
+              <a href="{% url 'rad1' %}">
+                <span class="sidebar-mini-icon">C</span>
+                <span class="sidebar-normal">Program PLO Comparison</span>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'rad2' %}">
+                <span class="sidebar-mini-icon">T</span>
+                <span class="sidebar-normal">Graduates PLO Achievement</span>
+              </a>
+            </li>
+            <li>
+              <a href="{% url 'ucomp' %}">
+                <span class="sidebar-mini-icon">I</span>
+                <span class="sidebar-normal">Selected PLO Performance</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>      
+      
+      <li>
+        <a href="{% url 'logoutpage' %}">
+          <i class="tim-icons icon-user-run"></i>
+          <p>Logout</p>
+        </a>
+      </li>
+
+
+    </ul>
+  </div>
+</div>
